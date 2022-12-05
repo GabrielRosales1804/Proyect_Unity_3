@@ -1,0 +1,432 @@
+using System;
+
+namespace Proyect_Unity_3_2._0
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] numeros_de_vector = new double[10];
+            string eleccion = " "; 
+            Console.WriteLine("Ingrese los diez numeros de su vector");
+            Console.WriteLine(" ");
+            Console.WriteLine("Ingrese el primer numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[0] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[1] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el tercer numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[2] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el cuarto numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[3] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el quinto numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[4] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el sexto numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[5] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el septimo numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[6] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el octavo numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[7] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el noveno numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[8] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el decimo numero");
+            Console.WriteLine(" ");
+            numeros_de_vector[9] = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Escriba cual es la accion que quiere hacer");
+            Console.WriteLine(" ");
+            Console.WriteLine("Acomodar numeros: Para que el primero avance al segundo y asi sucesivamente y el ultimo pase al primero");
+            Console.WriteLine(" ");
+            Console.WriteLine("Menor a mayor: Para averiguar si el los numeros estan acomodados de mayor a menor");
+            Console.WriteLine(" ");
+            Console.WriteLine("Creciente: Para averiguar si tus numeros estan crecientes o no");
+            Console.WriteLine(" ");
+            Console.WriteLine("Numero Repetido: Averiguar si hay un numero repetido");
+            Console.WriteLine(" ");
+            Console.WriteLine("Ordenar de menor a mayor: Acomodar los numero de mayor a menor ");
+            Console.WriteLine(" ");
+            Console.WriteLine("Econtrar numero: Averiguar si un numero escogido esta dentro del vector");
+            Console.WriteLine(" ");
+            Console.WriteLine("Promedio: Allar el promedio del vector");
+            Console.WriteLine(" ");
+            
+            eleccion = Console.ReadLine();
+
+            switch (eleccion)
+            {
+                case "Acomodar numeros":
+                    Console.WriteLine(numeros_de_vector[9] + " " + numeros_de_vector[1] + " " + numeros_de_vector[2] + " " + numeros_de_vector[3] + " " + numeros_de_vector[4] + " " + numeros_de_vector[5] + " " + numeros_de_vector[6] + " " + numeros_de_vector[7] + " " + numeros_de_vector[8] + " " + numeros_de_vector[9]);
+                    break;
+                case "Menor a mayor":
+
+                    if (numeros_de_vector[0] < numeros_de_vector[1])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[1] < numeros_de_vector[2])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[2] < numeros_de_vector[3])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[3] < numeros_de_vector[4])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[4] < numeros_de_vector[5])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[5] < numeros_de_vector[6])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[6] < numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[7] < numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[8] < numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[0] > numeros_de_vector[9])
+                    {
+                        Console.WriteLine(" ");
+                        Console.WriteLine("No estan ordenados");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Estan acomodados de menor a mayor");
+                    }
+
+                    break;
+                case "Creciente":
+                    if (numeros_de_vector[0]++ == numeros_de_vector[1])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[1]++ == numeros_de_vector[2])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[2]++ == numeros_de_vector[3])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[3]++ == numeros_de_vector[4])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[4]++ == numeros_de_vector[5])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[5]++ == numeros_de_vector[6])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[6]++ == numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[7]++ == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[8]++ == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Verifcando por favor espere");
+                        Console.WriteLine(" ");
+                    }
+                    if (numeros_de_vector[0] > numeros_de_vector[9])
+                    {
+                        Console.WriteLine(" ");
+                        Console.WriteLine("No esta creciente");
+                    }
+                    else
+                    {
+                        Console.WriteLine(" ");
+                        Console.WriteLine("Si esta creciente");
+                    }
+                    break;
+                case "Numero Repetido":
+                    if (numeros_de_vector[0] == numeros_de_vector[1])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[0] == numeros_de_vector[2])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[0] == numeros_de_vector[3])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[0] == numeros_de_vector[4])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[0] == numeros_de_vector[5])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[0] == numeros_de_vector[6])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[0] == numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[0] == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[0] == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[1] == numeros_de_vector[2])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[1] == numeros_de_vector[3])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[1] == numeros_de_vector[4])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[1] == numeros_de_vector[5])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[1] == numeros_de_vector[6])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[1] == numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[1] == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[1] == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[2] == numeros_de_vector[3])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[2] == numeros_de_vector[4])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[2] == numeros_de_vector[5])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[2] == numeros_de_vector[6])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[2] == numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[2] == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[2] == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[3] == numeros_de_vector[4])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[3] == numeros_de_vector[5])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[3] == numeros_de_vector[6])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[3] == numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[3] == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[3] == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[4] == numeros_de_vector[5])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[4] == numeros_de_vector[6])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[4] == numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[4] == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[4] == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[5] == numeros_de_vector[6])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[5] == numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[5] == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[5] == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[6] == numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[6] == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[6] == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[7] == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[7] == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    if (numeros_de_vector[8] == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si hay repetidos");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No hay repetidos");
+                    }
+                    break;
+                case "Ordenar de mayor a menor":
+                    Console.WriteLine("Le di muchos intentos y no me dio :(");
+                    break;
+                case "Encontrar numero":
+                    double variable_encontrar = 0;
+                    Console.WriteLine("Esciba el numero que quiere encontar");
+                    variable_encontrar = double.Parse(Console.ReadLine());
+                    if (variable_encontrar == numeros_de_vector[0])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    if (variable_encontrar == numeros_de_vector[1])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    if (variable_encontrar == numeros_de_vector[2])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    if (variable_encontrar == numeros_de_vector[3])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    if (variable_encontrar == numeros_de_vector[4])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    if (variable_encontrar == numeros_de_vector[5])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    if (variable_encontrar == numeros_de_vector[6])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    if (variable_encontrar == numeros_de_vector[7])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    if (variable_encontrar == numeros_de_vector[8])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    if (variable_encontrar == numeros_de_vector[9])
+                    {
+                        Console.WriteLine("Si se encuentra");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No se encuentra");
+                    }
+                    break;
+                case "Promedio":
+                    double promedio = numeros_de_vector[0] + numeros_de_vector[1] + numeros_de_vector[2] + numeros_de_vector[3] + numeros_de_vector[4] + numeros_de_vector[5] + numeros_de_vector[6] + numeros_de_vector[7] + numeros_de_vector[8] + numeros_de_vector[9] / 10;
+                    Console.WriteLine("Tu promedio es de " + promedio);
+                    break;
+                    default:
+                    Console.WriteLine("Error pusiste mal el nombre");
+                    break;
+            }
+            Console.Read();
+        }
+    }
+}
